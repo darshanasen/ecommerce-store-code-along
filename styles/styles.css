@@ -405,6 +405,9 @@ button.menuIcon:focus {
   background-color: transparent;
 }
 
+a {
+  display: inline-block;
+}
 a.button {
   color: #084b6d;
   background-color: transparent;
@@ -424,6 +427,11 @@ a.button:hover {
 a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .navBar {
@@ -548,6 +556,41 @@ header .headerContent .contentContainer {
 }
 .categoryGallery .itemFour {
   background-color: #f9d3d3;
+}
+
+.productsMainContent section {
+  padding: 75px 0;
+}
+.productsMainContent h2 {
+  text-align: center;
+}
+.productsMainContent .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.productsMainContent .products li {
+  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+      flex-basis: calc(33.3333333333% - 30px);
+  margin: 5px 15px;
+  text-align: center;
+}
+.productsMainContent .products img {
+  border-radius: 10px;
+}
+.productsMainContent .popularProduct {
+  font-weight: bold;
+}
+.productsMainContent .discountedPrice {
+  text-decoration: line-through;
+  color: rgba(8, 75, 109, 0.5);
+}
+.productsMainContent .discountedPrice span {
+  display: inline-block;
+  text-decoration: none;
+  color: #084b6d;
 }
 
 footer {

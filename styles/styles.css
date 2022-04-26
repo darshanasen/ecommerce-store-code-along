@@ -477,7 +477,7 @@ a.button:focus {
 }
 
 header {
-  background-color: #f8fbf3;
+  background-color: #e8f9d3;
   margin-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,13 +541,13 @@ header .headerContent .contentContainer {
   background-color: #ffd698;
 }
 .categoryGallery .itemTwo {
-  background-color: #f4fcff;
+  background-color: #d3f0f9;
 }
 .categoryGallery .itemThree {
-  background-color: #f8fbf3;
+  background-color: #e8f9d3;
 }
 .categoryGallery .itemFour {
-  background-color: #fff5f5;
+  background-color: #f9d3d3;
 }
 
 footer {
@@ -591,4 +591,41 @@ footer .footerNav nav a:hover {
 }
 footer .footerNav nav a:focus {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 480px) {
+  .navBar {
+    padding: 0;
+  }
+  .navBar .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar .wrapper .menuIcon {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .navBar .wrapper > * {
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  .navBar .searchCart button,
+.navBar .searchCart a,
+.navBar .searchCart div {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .navBar .searchCart .searchIcon {
+    margin-right: 0;
+  }
 }
